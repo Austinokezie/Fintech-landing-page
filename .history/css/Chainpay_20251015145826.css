@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #13161d;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav .left {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+
+}
+nav .logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2px;
+   
+}
+nav .logo .dot{
+    color: green;
+    font-size: 1.5rem;
+}
+nav .logo img{
+    height: 32px;
+}
+nav .links{
+    display: flex;
+    list-style: none;
+    
+}
+nav .links :hover{
+    color: forestgreen;
+}
+nav .links .link{
+    padding: 5px 1.5rem;
+    font-weight: 500;
+}
+nav .btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .btn i{
+    font-size: 1.3rem;
+    background-color: rgba(2, green, blue, alpha);
+    color: green;
+    padding: .5rem .5rem;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;  
+    cursor: pointer;
+
+}
+nav .btn .flag{
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 4px 4px;
+    
+}
+ 
+nav .btn .flag a{
+    text-decoration: none;
+}
+nav .btn .flag img{
+    width: .9rem;
+    height: .4rem;
+}
+nav .btn .flag span{
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem;
+    
+    gap: 2rem;
+}
+main .introsection{
+    /* display: flex; */
+    padding: 5rem 0;
+    /* justify-content: center; */
+}
+main .introsection h1{
+   font-size: 3.5rem;
+}
+main.introsection h1 p{
+    font-size: 5rem;
+}
+.introsection .describe{
+    font-size: 16px;
+    opacity: .7;
+    margin: 1.5rem 0;
+    max-width: 80%;
+}
+main .imagesection img{
+    width: 29rem;
+    height: 27rem;
+    /* margin-top: 30px; */
+}
+main .btnicons{
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+main .btnicons a{
+    text-decoration: none;
+    color: green;
+}
+main .btnicons i{
+    font-size: 1.3rem;
+    /* background-color: rgb(36, 17, 17); */
+    padding: .5rem .5rem;
+    color: green;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;
+    
+ 
+}
+
+/* =========================
+   🌐 Services Highlight Section
+   ========================= */
+
+.trust-section {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f7f7f7; /* Light background to match the image tone */
+}
+
+.trust-statement {
+    font-size: 1.2rem;
+    color: #333333; /* Darker text for the statement */
+    margin-bottom: 25px;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 40px; /* Space between logos */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaaaaa; /* Faded/light gray color as seen in the image */
+    text-transform: uppercase;
+    opacity: 0.6; /* Slight transparency to enhance the faded look */
+    /* Add a specific font-family if you want to match the logo typeface exactly */
+}
+
+/* Specific Logo adjustments (optional, to better mimic the logo styles) */
+.visa {
+    /* No major change needed */
+}
+
+.stripe {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+}
+
+.skrill {
+    /* No major change needed */
+}
+
+.paypal {
+    font-size: 1.8rem;
+}
+
+.apple-pay {
+    font-size: 1.8rem;
+    /* The Apple logo  is used directly in the HTML */
+}
+
+
+
+/* =========================
+   📱 Responsive Design
+   ========================= */
+
+/* Tablet view – up to 768px */
+/* Tablet and smaller (≤768px) */
+@media (max-width: 768px) {
+  .Services-highlight {
+    justify-content: center;
+    gap: 25px 15px;
+    padding: 30px 5%;
+  }
+
+  .footeritem {
+    flex: 1 1 28%; /* 3 items per row */
+    min-width: 120px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .Services-highlight {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 5%;
+  }
+
+  .footeritem {
+    flex: 1 1 45%; /* 2 items per row */
+    min-width: 130px;
+  }
+
+  .footeritem p {
+    font-size: 0.9rem;
+  }
+}

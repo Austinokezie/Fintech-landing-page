@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #13161d;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav .left {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+
+}
+nav .logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2px;
+   
+}
+nav .logo .dot{
+    color: green;
+    font-size: 1.5rem;
+}
+nav .logo img{
+    height: 32px;
+}
+nav .links{
+    display: flex;
+    list-style: none;
+    
+}
+nav .links :hover{
+    color: forestgreen;
+}
+nav .links .link{
+    padding: 5px 1.5rem;
+    font-weight: 500;
+}
+nav .btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .btn i{
+    font-size: 1.3rem;
+    background-color: rgba(2, green, blue, alpha);
+    color: green;
+    padding: .5rem .5rem;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;  
+    cursor: pointer;
+
+}
+nav .btn .flag{
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 4px 4px;
+    
+}
+ 
+nav .btn .flag a{
+    text-decoration: none;
+}
+nav .btn .flag img{
+    width: .9rem;
+    height: .4rem;
+}
+nav .btn .flag span{
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem;
+    
+    gap: 2rem;
+}
+main .introsection{
+    /* display: flex; */
+    padding: 5rem 0;
+    /* justify-content: center; */
+}
+main .introsection h1{
+   font-size: 3.5rem;
+}
+main.introsection h1 p{
+    font-size: 5rem;
+}
+.introsection .describe{
+    font-size: 16px;
+    opacity: .7;
+    margin: 1.5rem 0;
+    max-width: 80%;
+}
+main .imagesection img{
+    width: 29rem;
+    height: 27rem;
+    /* margin-top: 30px; */
+}
+main .btnicons{
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+main .btnicons a{
+    text-decoration: none;
+    color: green;
+}
+main .btnicons i{
+    font-size: 1.3rem;
+    /* background-color: rgb(36, 17, 17); */
+    padding: .5rem .5rem;
+    color: green;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;
+    
+ 
+}
+
+/* =========================
+   🌐 Services Highlight Section
+   ========================= */
+
+.trust-section {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #13161d;
+    color: white;
+}
+
+.trust-statement {
+    font-size: 1.2rem;
+    color: #333333; /* Darker text for the statement */
+    margin-bottom: 25px;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 40px; /* Space between logos */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaaaaa; /* Faded/light gray color as seen in the image */
+    text-transform: uppercase;
+    opacity: 0.6; /* Slight transparency to enhance the faded look */
+    /* Add a specific font-family if you want to match the logo typeface exactly */
+}
+
+/* Specific Logo adjustments (optional, to better mimic the logo styles) */
+.visa {
+    /* No major change needed */
+}
+
+.stripe {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+}
+
+.skrill {
+    /* No major change needed */
+}
+
+.paypal {
+    font-size: 1.8rem;
+}
+
+.apple-pay {
+    font-size: 1.8rem;
+    /* The Apple logo  is used directly in the HTML */
+}
+.apple-pay img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Base Styles */
+.currency-feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #13161d;
+    color: white;
+    font-family: serif;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+/* --------------------
+    Left Column: Demo Section Styling
+-------------------- */
+.demo-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem;
+    max-width: 350px; /* Limit size for better aesthetics */
+    background: linear-gradient(145deg, #1f242d, #0c0e13);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 10);
+    border-radius: 10px;
+}
+
+/* Input Card */
+.input-card {
+    background-color: #e0f2e0; /* Lightest green for the card */
+    padding: 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    width: 50%; /* Smaller than the overall demo section */
+}
+
+.input-card .amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.currency-selector {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for selector */
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    /* In a real scenario, you'd load the image */
+    /* Placeholder for the flag */
+    background-color: #003087; /* Just to show where the flag goes */
+    /* border: 1px solid #ccc; */
+}
+.currency-code {
+    color: #333;
+}
+
+/* Transfer Details Card */
+.transfer-details-card {
+    background-color: #2c2c2c; /* Dark background for this card */
+    color: #ffffff;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Wider than the input card */
+}
+
+.card-header {
+    background-color: #444444; /* Darker header section */
+    padding: 15px 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.transfer-info {
+    padding: 15px 25px;
+}
+
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: #dddddd; /* Light text for details */
+    gap: 10px;
+}
+
+.bank-transfer {
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.bank-icon {
+    display: flex;
+    align-items: center;
+    width: 20p;
+    height: 20px;
+    background-color: #00a86b; /* Green circle icon color */
+    border-radius: 50%;
+    font-size: 18px;
+    /* margin-right: 10px; */
+    /* flex-shrink: 0; */
+
+}
+.bank-icon i{
+    font-size: 18px;
+    color: #00a86b;
+    line-height: 1;
+}
+
+.detail-row .label {
+    color: #aaaaaa; /* Lighter gray for labels */
+}
+
+.detail-row .value {
+    text-align: right;
+}
+
+/* --------------------
+    Right Column: Content Section Styling
+-------------------- */
+.content-section {
+    flex: 1;
+    max-width: 550px;
+    padding-left: 50px;
+    color: #f5f5dc;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: #2ecc71;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #2c2c2c; /* Dark background for CTA */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #444444;
+}
+
+.learn-icon {
+    width: 15px;
+    height: 15px;
+    /* background-color: #00a86b; Small green icon placeholder */
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+
+
+/* --------------------
+    Media Queries 
+-------------------- */
+
+/* Tablet View (Max-width: 768px) */
+@media (max-width: 768px) {
+    .trust-statement {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+
+    .payment-logos {
+        gap: 30px; /* Reduce spacing between logos */
+    }
+
+    .logo {
+        font-size: 1.4rem; /* Slightly smaller logos */
+    }
+
+    .stripe {
+        font-size: 1.5rem;
+    }
+
+    .paypal,
+    .apple-pay {
+        font-size: 1.7rem;
+    }
+}
+
+/* Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    .trust-section {
+        padding: 20px 10px;
+    }
+    
+    .trust-statement {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .payment-logos {
+        gap: 20px 30px; /* Vertical and horizontal gap */
+        /* Logos might wrap to a new line on very small screens */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Smaller logos for mobile */
+    }
+    
+    .stripe {
+        font-size: 1.3rem;
+    }
+
+    .paypal,
+    .apple-pay {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* Tablet View (Max-width: 768px) */
+@media (max-width: 768px) {
+    .currency-feature-section {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 40px 5%;
+    }
+
+    .demo-section {
+        padding-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: none;
+        align-items: center; /* Center the cards */
+    }
+
+    .input-card {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .transfer-details-card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .content-section {
+        padding-left: 0;
+        text-align: center; /* Center align text */
+        max-width: 100%;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        margin: 0 auto; /* Center the button */
+    }
+}
+
+/* Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    .currency-feature-section {
+        padding: 30px 4%;
+    }
+    
+    .headline {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .input-card {
+        width: 100%; /* Full width for smaller screens */
+        max-width: none;
+        padding: 15px 20px;
+    }
+    
+    .input-card .amount {
+        font-size: 1.5rem;
+    }
+
+    .currency-selector {
+        padding: 6px 10px;
+    }
+
+    .transfer-details-card {
+        width: 95%; /* Keep it slightly narrower than full width */
+        max-width: none;
+    }
+
+    .info-line {
+        font-size: 0.85rem;
+    }
+}

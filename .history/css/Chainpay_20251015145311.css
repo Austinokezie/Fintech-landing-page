@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: #13161d;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 64px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav .left {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+
+}
+nav .logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2px;
+   
+}
+nav .logo .dot{
+    color: green;
+    font-size: 1.5rem;
+}
+nav .logo img{
+    height: 32px;
+}
+nav .links{
+    display: flex;
+    list-style: none;
+    
+}
+nav .links :hover{
+    color: forestgreen;
+}
+nav .links .link{
+    padding: 5px 1.5rem;
+    font-weight: 500;
+}
+nav .btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .btn i{
+    font-size: 1.3rem;
+    background-color: rgba(2, green, blue, alpha);
+    color: green;
+    padding: .5rem .5rem;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;  
+    cursor: pointer;
+
+}
+nav .btn .flag{
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 4px 4px;
+    
+}
+ 
+nav .btn .flag a{
+    text-decoration: none;
+}
+nav .btn .flag img{
+    width: .9rem;
+    height: .4rem;
+}
+nav .btn .flag span{
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem;
+    
+    gap: 2rem;
+}
+main .introsection{
+    /* display: flex; */
+    padding: 5rem 0;
+    /* justify-content: center; */
+}
+main .introsection h1{
+   font-size: 3.5rem;
+}
+main.introsection h1 p{
+    font-size: 5rem;
+}
+.introsection .describe{
+    font-size: 16px;
+    opacity: .7;
+    margin: 1.5rem 0;
+    max-width: 80%;
+}
+main .imagesection img{
+    width: 29rem;
+    height: 27rem;
+    /* margin-top: 30px; */
+}
+main .btnicons{
+    display: flex;
+    gap: 1px;
+    align-items: center;
+}
+main .btnicons a{
+    text-decoration: none;
+    color: green;
+}
+main .btnicons i{
+    font-size: 1.3rem;
+    /* background-color: rgb(36, 17, 17); */
+    padding: .5rem .5rem;
+    color: green;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;
+    
+ 
+}
+
+/* =========================
+   🌐 Services Highlight Section
+   ========================= */
+
+.Services-highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 8%;
+  background-color: #111; /* optional dark section */
+  color: #f5f5f5;
+  text-align: center;
+  gap: 20px;
+}
+
+.footeritem {
+  flex: 1 1 18%; /* roughly 5 per row on desktop */
+  min-width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.footeritem p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.footeritem:hover {
+  transform: translateY(-5px);
+}
+
+.footeritem p:hover {
+  color: #00e0b5; /* accent */
+}
+
+
+
+
+/* =========================
+   📱 Responsive Design
+   ========================= */
+
+/* Tablet view – up to 768px */
+/* Tablet and smaller (≤768px) */
+@media (max-width: 768px) {
+  .Services-highlight {
+    justify-content: center;
+    gap: 25px 15px;
+    padding: 30px 5%;
+  }
+
+  .footeritem {
+    flex: 1 1 28%; /* 3 items per row */
+    min-width: 120px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .Services-highlight {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 25px 5%;
+  }
+
+  .footeritem {
+    flex: 1 1 45%; /* 2 items per row */
+    min-width: 130px;
+  }
+
+  .footeritem p {
+    font-size: 0.9rem;
+  }
+}

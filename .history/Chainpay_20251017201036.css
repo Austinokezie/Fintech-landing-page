@@ -1,0 +1,1685 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #13161d;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 50px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+nav .left {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+
+}
+nav .logo span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    gap: 2px;
+   
+}
+nav .logo .dot{
+    color: green;
+    font-size: 1.5rem;
+}
+nav .logo img{
+    height: 32px;
+}
+nav .links{
+    display: flex;
+    list-style: none;
+    
+}
+nav .links :hover{
+    color: forestgreen;
+}
+nav .links .link{
+    padding: 5px 1.5rem;
+    font-weight: 500;
+}
+nav .btn{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav .btn i{
+
+    display: flex;
+    align-items: center;   /* centers vertically */
+    justify-content: center; /* centers horizontally */
+
+    font-size: 1.3rem;
+    color: green;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    /* font-size: 1.3rem;
+    background-color: rgba(2, green, blue, alpha);
+    color: green;
+    padding: .5rem .5rem;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;  
+    cursor: pointer; */
+
+}
+nav .btn .flag{
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 4px 4px;
+    
+}
+ 
+nav .btn .flag a{
+    text-decoration: none;
+}
+nav .btn .flag img{
+    width: .9rem;
+    height: .4rem;
+}
+nav .btn .flag span{
+    color: white;
+}
+
+nav #fa-bars,
+nav #close {
+  display: none;
+  /* cursor: pointer; */
+  /* z-index: 2000; */
+}
+nav #fa-bars img,
+nav #close img {
+  /* width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1); */
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem;
+    
+    gap: 2rem;
+}
+main .introsection{
+    /* display: flex; */
+    padding: 5rem 0;
+    /* justify-content: center; */
+}
+main .introsection h1{
+   font-size: 3.5rem;
+}
+main.introsection h1 p{
+    font-size: 5rem;
+}
+.introsection .describe{
+    font-size: 16px;
+    opacity: .7;
+    margin: 1.5rem 0;
+    max-width: 100%;
+}
+main .imagesection img{
+    width: auto;
+    height:auto;
+    /* margin-top: 30px; */
+}
+main .btnicons{
+    display: flex;
+    /* gap: 0.6px; */
+    align-items: center;
+    
+}
+main .btnicons a{
+    text-decoration: none;
+    color: green;
+}
+main .btnicons i{
+   display: flex;
+    align-items: center;   /* centers vertically */
+    justify-content: center; /* centers horizontally */
+
+    font-size: 1.3rem;
+    color: green;
+    border: 1px solid #ccc;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 10px;
+    
+    
+ 
+}
+
+/* =========================
+   🌐 Services Highlight Section
+   ========================= */
+
+.trust-section {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #13161d;
+    color: white;
+}
+
+.trust-statement {
+    font-size: 1.2rem;
+    color: #333333; /* Darker text for the statement */
+    margin-bottom: 25px;
+}
+
+.payment-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    gap: 40px; /* Space between logos */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aaaaaa; /* Faded/light gray color as seen in the image */
+    text-transform: uppercase;
+    opacity: 0.6; /* Slight transparency to enhance the faded look */
+    /* Add a specific font-family if you want to match the logo typeface exactly */
+}
+
+
+
+.stripe {
+    font-size: 1.6rem;
+    text-transform: lowercase;
+}
+
+.skrill {
+    /* No major change needed */
+}
+
+.paypal {
+    font-size: 1.8rem;
+}
+
+.apple-pay {
+    font-size: 1.8rem;
+    /* The Apple logo  is used directly in the HTML */
+}
+.apple-pay img{
+    width: 25px;
+    height: 25px;
+}
+
+
+/* Base Styles */
+.currency-feature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #13161d;
+    color: white;
+    font-family: serif;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+}
+
+/* 
+    Left Column: Demo Section Styling
+ */
+.demo-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 2rem 1rem;
+    max-width: 350px; /* Limit size for better aesthetics */
+    background: linear-gradient(145deg, #1f242d, #0c0e13);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 10);
+    border-radius: 10px;
+}
+
+/* Input Card */
+.input-card {
+    background-color: #e0f2e0; /* Lightest green for the card */
+    padding: 15px 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    width: 50%; /* Smaller than the overall demo section */
+}
+
+.input-card .amount {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.currency-selector {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* White background for selector */
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    /* In a real scenario, you'd load the image */
+    /* Placeholder for the flag */
+    background-color: #003087; /* Just to show where the flag goes */
+    /* border: 1px solid #ccc; */
+}
+.currency-code {
+    color: #333;
+}
+
+/* Transfer Details Card */
+.transfer-details-card {
+    background-color: #2c2c2c; /* Dark background for this card */
+    color: #ffffff;
+    padding: 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 95%; /* Wider than the input card */
+}
+
+.card-header {
+    background-color: #444444; /* Darker header section */
+    padding: 15px 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.transfer-info {
+    padding: 15px 25px;
+}
+
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    color: #dddddd; /* Light text for details */
+    gap: 10px;
+}
+
+.bank-transfer {
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.bank-icon {
+    display: flex;
+    align-items: center;
+    width: 20p;
+    height: 20px;
+    background-color: #00a86b; /* Green circle icon color */
+    border-radius: 50%;
+    font-size: 18px;
+    /* margin-right: 10px; */
+    /* flex-shrink: 0; */
+
+}
+.bank-icon i{
+    font-size: 18px;
+    color: #00a86b;
+    line-height: 1;
+}
+
+.detail-row .label {
+    color: #aaaaaa; /* Lighter gray for labels */
+}
+
+.detail-row .value {
+    text-align: right;
+}
+
+/* 
+    Right Column: Content Section Styling
+ */
+.content-section {
+    flex: 1;
+    max-width: 550px;
+    padding-left: 50px;
+    color: #f5f5dc;
+}
+
+.tagline {
+    font-size: 0.8rem;
+    color: #2ecc71;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #2c2c2c; /* Dark background for CTA */
+    color: #ffffff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s;
+    font-family: serif;
+}
+
+.cta-button:hover {
+    background-color: #444444;
+}
+
+.learn-icon {
+    width: 15px;
+    height: 15px;
+    /* background-color: #00a86b; Small green icon placeholder */
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+/* === Feature Section === */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1100px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  
+}
+
+/* === Card === */
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+  /* min-height: 320px; */
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Icon Circle === */
+.card-icon {
+  background-color: #0e3b33;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+
+}
+
+/* === Card Headings === */
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: .8rem;
+  color: #222;
+  line-height: 1.3;
+}
+
+/* === Active (Middle) Card === */
+.card.active {
+  background: linear-gradient(145deg, #008f62, #00a86b);
+  color: #fff;
+}
+
+.card.active .card-icon {
+  background-color: #fff;
+  color: #00a86b;
+}
+
+/* === Learn More Button === */
+.learn-more {
+  /* margin-top: ; */
+  background-color: #fff;
+  color: #00a86b;
+  border: none;
+  width: 120px;
+  padding: 0.6rem 0.6rem ;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  font-family: serif;
+}
+
+.learn-more:hover {
+  background-color: #e8f6f0;
+}
+
+/* === Footer Items (First Card) === */
+.card-footer .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+.item .amt{
+    margin-right: 25px;
+}
+.item i{
+    width: 25px;
+   height: 25px;
+   border-radius: 50%;
+  font-size: 1.2rem;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === Flag Icons (Last Card) === */
+.flag-icons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    /* align-items: flex-end; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.3rem;
+    /* margin-top: auto; */
+}
+
+.flag-icons img {
+  width: 22px;
+  height: 20px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+
+/* FAQ SECTION */
+
+
+.faq-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5rem 8rem;
+  background-color: #13161d;
+  color: #f8fafc;
+}
+
+.faq-header {
+  flex: 1;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.faq-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.faq-header p {
+  color: #0f766e;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.faq-content {
+    flex: 1;
+   max-width: 60%;
+  /* margin: 0 auto; */
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+/* Each Question Card */
+.qa-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+  background-color: #f8fafc;
+}
+
+.qa-item summary {
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  padding-right: 1.5rem;
+}
+
+.qa-item summary::marker {
+  display: none;
+}
+
+/* Dropdown arrow */
+.qa-item summary::after {
+  content: '▾';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.2rem;
+  color: #0f766e;
+  transition: transform 0.3s ease;
+}
+
+.qa-item[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+.qa-item p {
+  margin-top: 0.8rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.qa-item:hover summary {
+  color: #0f766e;
+}
+
+
+.currency-feature-section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 80px 10%;
+  /* background-color: #fff; */
+  color: #ffffff;
+  position: relative;
+}
+
+/* LEFT CONTENT */
+.content-section {
+  flex: 1;
+  gap: 2rem;
+}
+
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #00bfa6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  color: #f8fafc;
+  margin-bottom: 15px;
+}
+
+.content-section p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 420px;
+  line-height: 1.6;
+}
+
+/* RIGHT CONTENT */
+.demo-section-2 {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 2rem 1rem;
+  max-width: 350px;
+  /* background: linear-gradient(145deg, #1f242d, #0c0e13);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 1); */
+  border-radius: 10px;
+  overflow: hidden; /* keeps overlay tidy */
+}
+.demo-section-2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background: url("./images/Globe\ img.jpg") no-repeat center/contain;
+  background-size: 200%;
+  opacity: 0.07; /* reduces visibility */
+  z-index: 0;
+  pointer-events: none;
+}
+.demo-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.exchange-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.exchange-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 1.2rem;
+}
+
+.exchange-header i {
+  color: #007bff;
+  font-size: 1.2rem;
+}
+
+.exchange-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.field label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.field input {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.exchange-rate-section {
+  margin-top: 10px;
+}
+
+.exchange-rate-section h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.rate-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  transition: 0.3s ease;
+}
+
+.rate-item:hover {
+  background: #f0f0f0;
+}
+
+.rate-item img {
+  width: 25px;
+  border-radius: 3px;
+}
+
+.rate-item span {
+  font-size: 0.85rem;
+}
+
+.rate-item .rate {
+  font-weight: 600;
+}
+
+
+
+
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(135deg, #007a68, #005c53);
+  color: #fff;
+  padding: 2.5rem 8% 1.5rem;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Optional world map overlay */
+.footer-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120%;
+  height: 120%;
+  background: url("./images/World\ gblob\ img.webp") center/cover no-repeat;
+  opacity: 0.07;
+  z-index: 0;
+}
+
+/* Footer Content Container */
+.footer-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*  Footer Top (Heading + Form)  */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.footer-top h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/*  Newsletter Form  */
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 50px;
+  padding: 5px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.newsletter-form input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.newsletter-form button {
+  background: #0a0a0a;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #1a1a1a;
+  transform: scale(1.05);
+}
+
+/* Footer Bottom (Links + Brand) */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+/* Left Side */
+.footer-left {
+  flex: 1 1 250px;
+}
+
+.footer-left .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left .chainpay-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-left .footer-subtext {
+  margin: 1rem 0;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #d3f8e2;
+}
+
+/* ===== Right Side ===== */
+.footer-right {
+  flex: 2 1 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-links h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+.footerbtn{
+    font-family: serif;
+}
+
+
+
+    
+
+
+
+/* Tablet View (Max-width: 768px) */
+@media (max-width: 768px) {
+    nav {
+        /* position: relative; */
+       padding: 1rem 1.5rem;
+    }
+    /* .left {
+      flex: 1;
+      justify-content: space-between;
+    } */
+
+  /* Hide regular nav links by default */
+  .links {
+     position: fixed;
+     top: -100%;
+     left: 0;
+     width: 100%;
+     height: auto;
+     background-color: #13161d;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     gap: 1.8rem;
+     padding: 2rem 0;
+     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+     transition: top 0.6s ease-in-out;
+     /* overflow: hidden;
+     max-height: 0; */
+     z-index: 1000;
+    }
+
+  /* When menu is active, slide down */
+    .links.active {
+     top: 8px;
+    }
+
+  /* Hide buttons area on small screens */
+   .btn {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     /* margin-right: 30px; */
+     
+    }
+    .btn .flag {
+        
+    }
+
+  /* Show hamburger */
+    #fa-bars {
+     display: block !important;
+     position: relative;
+     z-index: 3000;
+     width: 100%;
+     height: 100%;
+    }
+    #fa-bars img {
+       width: 200%;
+       height: 200%;
+      filter: brightness(0) invert(1); /* makes it visible on dark bg */
+      
+    }
+    
+
+  /* Close icon inside dropdown */
+    #close {
+      display: none;
+    }
+
+  /* Nav link styles inside mobile menu */
+    .links li {
+     display: block;
+     padding: 0.8rem 0;
+     font-size: 1.1rem;
+    }
+
+    .links li:hover {
+     color: #00a86b;
+    }
+
+
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem; /* space between cards */
+      padding: 2rem 1.5rem;
+    }
+
+    .features .card {
+     width: 100%;
+     max-width: 420px;
+     margin: 0 auto;
+     padding: 1.5rem;
+     border-radius: 12px;
+     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+     text-align: center;
+    }
+
+    .features .card h3 {
+     font-size: 1.3rem;
+     line-height: 1.4;
+     margin-bottom: 30px;
+    }
+
+    .features .card-icon i {
+     font-size: 1.8rem;
+    }
+
+    .features .flag-icons img {
+      width: 32px;
+     height: 32px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .currency-feature-section {
+        flex-direction: column; /* Stack columns vertically */
+        padding: 40px 5%;
+    }
+
+    .demo-section {
+        padding-right: 0;
+        margin-bottom: 30px;
+        width: 100%;
+        max-width: none;
+        align-items: center; /* Center the cards */
+    }
+
+
+    .currency-feature-section-2 {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+       padding: 50px 25px;
+      gap: 2.5rem;
+    }
+
+    .content-section {
+      order: 1;
+      max-width: 90%;
+    }
+
+    .content-section h2 {
+     font-size: 1.8rem;
+    }
+
+    .content-section p {
+      font-size: 1rem;
+     max-width: 600px;
+     margin: 0 auto;
+    }
+
+    .demo-section-2 {
+      order: 2;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+    }
+
+    .exchange-card {
+      max-width: 400px;
+      padding: 1.8rem;
+    }
+
+    .exchange-fields {
+        display: flex;
+      /* flex-direction: column; */
+      
+    }
+
+    .field input {
+       text-align: center;
+     font-size: 1rem;
+    }
+
+    .input-card {
+        width: 70%;
+        max-width: 350px;
+    }
+
+    .transfer-details-card {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .content-section {
+        padding-left: 0;
+        text-align: center; /* Center align text */
+        max-width: 100%;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        margin: 0 auto; /* Center the button */
+    }
+    .faq-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+     padding: 3rem 2rem;
+     gap: 2.5rem; /* space between header and content */
+    }
+
+    .faq-header {
+     width: 100%;
+     max-width: 650px;
+    }
+     .faq-header h1 {
+     font-size: 2rem;
+      line-height: 1.3;
+    }
+    
+    .faq-header p {
+     font-size: 1rem;
+     margin-top: 0.8rem;
+    }
+     .faq-content {
+     width: 100%;
+     max-width: 650px;
+     display: flex;
+     flex-direction: column;
+     gap: 1.2rem; /* space between FAQ items */
+    }
+
+    .qa-item {
+      padding: 1rem 1.2rem;
+     border-radius: 10px;
+     background: #fafafa;
+     text-align: left;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+    .qa-item summary {
+     font-size: 1.1rem;
+     font-weight: 600;
+    }
+
+    .qa-item p {
+     font-size: 1rem;
+     line-height: 1.5;
+     margin-top: 0.5rem;
+    }
+
+
+
+    .footer-section {
+      padding: 3rem ;
+      border-radius: 18px 18px 0 0;
+    }
+
+    /* Stack heading and form vertically */
+    .footer-top {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 1.2rem;
+    }
+
+  .footer-top h2 {
+    font-size: 1.8rem;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Reflow footer bottom into 2 rows */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  .footer-left {
+    flex: none;
+    width: 100%;
+  }
+   .footer-left .brand{
+     justify-content: center;
+   }
+
+  .footer-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+
+/* Mobile View (Max-width: 480px) */
+@media (max-width: 480px) {
+    nav {
+      padding: 1rem;
+     }
+
+    .links {
+      top: -100%;
+     padding: 1.5rem 0;
+    }
+    .links li {
+      font-size: 1rem;
+    }
+
+   #fa-bars {
+     display: block !important;
+      position: relative;
+      z-index: 3000;
+    }
+    #fa-bars img {
+     width: 40px;
+     height: 40px;
+      filter: brightness(0) invert(1);
+    }
+
+    #close  img {
+     width: 24px;
+     height: 24px;
+    }
+    .btn {
+       display: flex;
+      align-items: center;
+      /* gap: 10px; */
+      margin-right: 20px ;
+    }
+    .btn i {
+      font-size: 1rem;
+    }
+    .flag img {
+       width: 22px;
+    }
+
+    .flag span {
+      font-size: 0.9rem;
+    }
+
+
+    main {
+       flex-direction: column;
+       padding: 1rem 1.5rem;
+       gap: 1rem;
+       text-align: center;
+    }
+    main .imagesection img {
+       width: 100%;
+       height: auto;
+    }
+    .describe{
+        text-align: center;
+        justify-content: center;
+    }
+    main .btnicons{
+        text-align: center;
+        justify-content: center;
+    }
+    .trust-section {
+        padding: 20px 10px;
+    }
+    
+    .trust-statement {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .payment-logos {
+        gap: 20px 30px; /* Vertical and horizontal gap */
+        /* Logos might wrap to a new line on very small screens */
+    }
+
+    .logo {
+        font-size: 1.2rem; /* Smaller logos for mobile */
+    }
+    
+    .stripe {
+        font-size: 1.3rem;
+    }
+
+    .paypal,
+    .apple-pay {
+        font-size: 1.5rem;
+    }
+
+    .currency-feature-section {
+        display: flex;
+       flex-direction: column;
+       align-items: center; /* centers children horizontally */
+       justify-content: center;
+       gap: 1.8rem;
+       padding: 30px 5%;
+    }
+    .demo-section {
+       width: 90%;
+      max-width: 360px;
+       margin: 0 auto;
+      padding: 1.5rem 1.2rem;
+       border-radius: 12px;
+    }
+    
+    .headline {
+        font-size: 1.7rem;
+    }
+
+    .description {
+        font-size: 0.9rem;
+    }
+
+    .input-card {
+        width: 50%; /* Full width for smaller screens */
+        max-width: none;
+        padding: 15px 20px;
+    }
+    
+    .input-card .amount {
+        font-size: 1rem;
+    }
+
+    .currency-selector {
+        padding: 6px 8px;
+    }
+
+    .transfer-details-card {
+        width: 95%; /* Keep it slightly narrower than full width */
+        max-width: none;
+    }
+
+    .info-line {
+        font-size: 0.85rem;
+    }
+    
+
+    .features {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 1rem;
+    }
+
+    .features .card {
+      width: 100%;
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 1.2rem 1rem;
+      border-radius: 10px;
+     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+     text-align: center;
+    }
+
+    .features .card h3 {
+      font-size: 1.1rem;
+     line-height: 1.3;
+    }
+
+    .features .card-icon i {
+      font-size: 1.6rem;
+      /* margin-bottom: 0.8rem; */
+    }
+    .features .learn-more {
+     padding: 0.6rem 1rem;
+      font-size: 1rem;
+    }
+
+
+   
+
+
+
+
+    .faq-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+     padding: 2.5rem 2rem;
+     gap: 2rem; /* vertical spacing between header and content */
+    }
+
+    .faq-header {
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+    }
+    .faq-header h1 {
+     font-size: 1.6rem;
+     line-height: 1.2;
+    }
+
+   .faq-header p {
+     font-size: 1.5rem;
+     margin-top: 0.4rem;
+    }
+
+   .faq-content {
+      width: 100%;
+      max-width: 360px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; /* vertical gap between FAQ items */
+    }
+
+    .qa-item {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: left;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+    }
+
+   .qa-item summary {
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .qa-item p {
+      font-size: 0.9rem;
+     line-height: 1.4;
+      margin-top: 0.5rem;
+    }
+
+
+    .currency-feature-section {
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 5%;
+      gap: 2rem;
+    }
+
+   .content-section .icon-circle {
+      width: 50px;
+      height: 50px;
+      font-size: 1.2rem;
+    }
+
+   .content-section h2 {
+      font-size: 1.5rem;
+     line-height: 1.3;
+    }
+
+   .content-section .tagline {
+      font-size: 0.9rem;
+      color: #2ecc71;
+      line-height: 1.5;
+    }
+
+   .demo-section-2 {
+      order: 2;
+      width: 90;
+
+      justify-content: center;
+    }
+
+   .exchange-card {
+      /* width: 100%; */
+      max-width: 350px;
+     padding: 1.5rem;
+     transform: scale(0.95);
+    }
+
+   .exchange-header {
+      font-size: 1.1rem;
+      gap: 8px;
+    }
+
+   .exchange-fields {
+     display: flex;
+     /* flex-direction: column; */
+     gap: 0.8rem;
+    }
+
+   .field input {
+    
+     font-size: 0.95rem;
+     padding: 0.8rem;
+    }
+
+   .rate-item {
+     font-size: 0.9rem;
+     padding: 0.6rem 0.9rem;
+    }
+
+   .rate-item img {
+      width: 24px;
+      height: 18px;
+    }
+
+     .footer-section {
+     padding: 1.5rem 5%;
+     text-align: center;
+     border-radius: 16px 16px 0 0;
+  }
+
+  /* Center text + form */
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-top h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    gap: 0.5rem;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 30px;
+  }
+
+  /* Footer bottom stacks fully */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .footer-left {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer-right {
+    justify-content: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-links h4 {
+    font-size: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
