@@ -1343,8 +1343,8 @@ main .btnicons i{
        gap: 1rem;
        text-align: center;
     }
-    .introsection h1 p {
-        font-size: 2.5rem;
+    .introsection h1 {
+        font-size: 1rem;
     }
     
     main .imagesection img {

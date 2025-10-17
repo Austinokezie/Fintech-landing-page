@@ -1038,7 +1038,7 @@ main .btnicons i{
     
      
     }
-    .introsection h1 {
+    main .imagesection h1 {
         font-size: 1rem;
     }
 
@@ -1108,6 +1108,15 @@ main .btnicons i{
       width: 32px;
      height: 32px;
     }
+
+
+
+
+
+
+
+
+
 
     .currency-feature-section {
         flex-direction: column; /* Stack columns vertically */
@@ -1320,7 +1329,7 @@ main .btnicons i{
      width: 24px;
      height: 24px;
     }
-    nav .btn {
+    .btn {
        display: none;
         /* align-items: center; */
        /* gap: 10px; */
@@ -1343,10 +1352,9 @@ main .btnicons i{
        gap: 1rem;
        text-align: center;
     }
-    .introsection h1 p {
-        font-size: 2.5rem;
+    main .imagesection h1 p{
+        font-size: 1rem;
     }
-    
     main .imagesection img {
        width: 100%;
        height: auto;

@@ -77,16 +77,25 @@ nav .btn i{
     height: 30px;
     border-radius: 50%;
     margin: 0 10px;
+    /* font-size: 1.3rem;
+    background-color: rgba(2, green, blue, alpha);
+    color: green;
+    padding: .5rem .5rem;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 52px;
+    margin:0 10px;  
+    cursor: pointer; */
 
 }
 nav .btn .flag{
     display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid;
     border-radius: 20px;
     padding: 4px 4px;
-    
     
 }
  
@@ -96,12 +105,9 @@ nav .btn .flag a{
 nav .btn .flag img{
     width: .9rem;
     height: .4rem;
-    justify-content: center;
-    align-items: center;
 }
 nav .btn .flag span{
     color: white;
-    justify-content: center;
 }
 
 nav #fa-bars,
@@ -1004,10 +1010,13 @@ main .btnicons i{
 /* Tablet View (Max-width: 768px) */
 @media (max-width: 768px) {
     nav {
-        
+        /* position: relative; */
        padding: 1rem 1.5rem;
     }
-  
+    /* .left {
+      flex: 1;
+      justify-content: space-between;
+    } */
 
   /* Hide regular nav links by default */
   .links {
@@ -1024,6 +1033,8 @@ main .btnicons i{
      padding: 2rem 0;
      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
      transition: top 0.6s ease-in-out;
+     /* overflow: hidden;
+     max-height: 0; */
      z-index: 1000;
     }
 
@@ -1033,13 +1044,15 @@ main .btnicons i{
     }
 
   /* Hide buttons area on small screens */
-   nav .btn {
+   .btn {
      display: none;
-    
+     /* align-items: center;
+     gap: 10px; */
+     /* margin-right: 30px; */
      
     }
-    .introsection h1 {
-        font-size: 1rem;
+    .btn .flag {
+        
     }
 
   /* Show hamburger */
@@ -1108,6 +1121,15 @@ main .btnicons i{
       width: 32px;
      height: 32px;
     }
+
+
+
+
+
+
+
+
+
 
     .currency-feature-section {
         flex-direction: column; /* Stack columns vertically */
@@ -1320,22 +1342,22 @@ main .btnicons i{
      width: 24px;
      height: 24px;
     }
-    nav .btn {
+    .btn {
        display: none;
         /* align-items: center; */
        /* gap: 10px; */
-       /* margin-right: 20px ; */
+       margin-right: 20px ;
     }
-    /* .btn i {
+    .btn i {
       font-size: 1rem;
-    } */
-    /* .flag img {
+    }
+    .flag img {
        width: 22px;
     }
 
     .flag span {
       font-size: 0.9rem;
-    } */
+    }
 
     main {
        flex-direction: column;
@@ -1343,10 +1365,9 @@ main .btnicons i{
        gap: 1rem;
        text-align: center;
     }
-    .introsection h1 p {
-        font-size: 2.5rem;
+    main .imagesection h1{
+        font-size: 1.5rem;
     }
-    
     main .imagesection img {
        width: 100%;
        height: auto;
